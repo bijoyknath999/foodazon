@@ -24,7 +24,7 @@
     <!-- Logo -->
     <div class="logo-sn ms-d-block-lg">
       <a class="pl-0 ml-0 text-center" href="index.html">
-        <img src="{{asset('images')}}/foodazon-logo.png" alt="logo">
+        <img src="{{asset('images')}}/foodazon-logo-216-116.png" alt="logo">
       </a>
     </div>
     <!-- Navigation -->
@@ -83,7 +83,7 @@
         <span class="ms-toggler-bar bg-primary"></span>
       </div>
       <div class="logo-sn logo-sm ms-d-block-sm">
-        <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="/"><img src="{{asset('images')}}/foodazon-logo.png" alt="logo"> </a>
+        <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="/"><img src="{{asset('images')}}/foodazon-logo-84-84.png" alt="logo"> </a>
       </div>
       <ul class="ms-nav-list ms-inline mb-0" id="ms-nav-options">
 
