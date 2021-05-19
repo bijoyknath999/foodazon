@@ -476,6 +476,12 @@ class MainController extends Controller
             }
 
 
+            function loadrecentorder()
+            {
+                $matchThese = ['orders_status' => 0, 'orders_type' => 1];
+                $orders = Orders::where($matchThese)->get()->paginate(2);;
+                return view('user.ordercart',['orders'=>$orders]);
+            }
 
 
     }
