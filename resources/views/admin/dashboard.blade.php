@@ -18,7 +18,7 @@
             <div class="ms-card-body media">
               <div class="media-body">
                 <h6>Total New Customers</h6>
-                <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> 150</p>
+                <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> {{$count->totalnewusers}}</p>
               </div>
             </div>
             <i class="flaticon-user"></i>
@@ -31,7 +31,7 @@
             <div class="ms-card-body media">
               <div class="media-body">
                 <h6>Total New Orders</h6>
-                <p class="ms-card-change"> 1000</p>
+                <p class="ms-card-change"> {{$count->totalNewOrders}}</p>
               </div>
             </div>
             <i class="flaticon-statistics"></i>
@@ -44,7 +44,7 @@
             <div class="ms-card-body media">
               <div class="media-body">
                 <h6>Total Customers</h6>
-                <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> 100</p>
+                <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> {{$count->totalUsers}}</p>
               </div>
             </div>
             <i class="flaticon-user"></i>
@@ -57,7 +57,7 @@
             <div class="ms-card-body media">
               <div class="media-body">
                 <h6>Total Completed Orders</h6>
-                <p class="ms-card-change"> 100</p>
+                <p class="ms-card-change"> {{$count->totalOrders}}</p>
               </div>
             </div>
             <i class="flaticon-statistics"></i>
