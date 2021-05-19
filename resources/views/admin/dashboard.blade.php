@@ -89,7 +89,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                  <form class="form-inline mr-auto mb-4" method="GET" action="{{route('admin.recentorders')}}" ">
+                  {{-- <form class="form-inline mr-auto mb-4" method="GET" action="{{route('admin.recentorders')}}" ">
                     @csrf
                   @foreach ($orders as $item)
                     <tr>
@@ -105,7 +105,7 @@
                         @endif
                     </tr>
                   @endforeach
-                </form>
+                </form> --}}
                 </tbody>
                 </table>
               </div>
