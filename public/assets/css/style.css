@@ -6107,7 +6107,7 @@ table.dataTable thead .sorting_desc_disabled:after {
 .ms-auth-bg {
     position: relative;
     height: 100%;
-    background-image: url(../img/costic/default-login.jpg);
+    background-image: url(../img/default-login.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -6402,7 +6402,7 @@ table.dataTable thead .sorting_desc_disabled:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/costic/coming-soon.jpg);
+    background-image: url(../img/coming-soon.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -6537,7 +6537,7 @@ a.ms-g-plus,
     position: relative;
     display: flex;
     align-items: flex-end;
-    background-image: url('../img/costic/banner-1000x370.jpg');
+    background-image: url('../img/banner-1000x370.jpg');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;

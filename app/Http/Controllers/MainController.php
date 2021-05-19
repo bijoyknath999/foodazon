@@ -136,7 +136,7 @@ class MainController extends Controller
 
     function dashboard(){
         $matchThese = ['orders_status' => 0, 'orders_type' => 1];
-        $orders = Orders::where($matchThese)->take(2)->get();
+        $orders = Orders::where($matchThese)->take(6)->get();
 
         $totalNewUsers = Users::where('verified',0)->count();
         $totalUsers = Users::where('verified',1)->count();
