@@ -139,10 +139,14 @@ class MainController extends Controller
 
         $totalNewUsers = Users::where('verified',0)->sum('id');
         $totalUsers = Users::where('verified',1)->sum('id');
+        $totalNewOrders = Orders::where('orders_status',0)->sum('id');
+        $totalOrders = Orders::where('orders_status',1)->sum('id');
+        $count = ["totalnewusers" => $totalNewUsers, 
+                "totalusers" => $totalUsers, 
+                "totalneworders" => $totalNewOrders, 
+                "totalorders" => $totalOrders];
 
-        $count = ["title" => "hello", "description" => "test test test"];
-
-        return $totalUsers;
+        return $count;
     }
 
     function addfood(){
