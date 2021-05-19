@@ -57,7 +57,7 @@
             <div class="ms-card-body media">
               <div class="media-body">
                 <h6>Total Completed Orders</h6>
-                <p class="ms-card-change"> </p>
+                <p class="ms-card-change"> {{$count['totalnewusers']}}</p>
               </div>
             </div>
             <i class="flaticon-statistics"></i>
