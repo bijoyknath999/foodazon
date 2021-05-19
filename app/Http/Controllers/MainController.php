@@ -137,7 +137,7 @@ class MainController extends Controller
     function dashboard(){
         $data = ['LoggedAdminInfo'=>Admin::where('id','=', session('LoggedAdmin'))->first()];
 
-        $totalNewUsers = Users::where('verified',0)->sum;
+        $totalNewUsers = Users::where('verified',0)->sum();
         $count = ["title" => "hello", "description" => "test test test"];
 
         return $totalNewUsers;
