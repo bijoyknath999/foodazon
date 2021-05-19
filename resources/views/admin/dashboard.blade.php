@@ -65,6 +65,9 @@
         </div>
 
         
+        <form class="form-inline mr-auto mb-4" method="GET" action="/admin/recentorders" ">
+          {{$data}}
+        </form>
       
         <!-- Recent Placed Orders< -->
         <div class="col-12">
@@ -89,9 +92,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                  <form class="form-inline mr-auto mb-4" method="GET" action="/admin/recentorders" ">
-                    {{$data}}
-                  </form>
 
                   {{-- @foreach ($data as $item)
                     <tr>
