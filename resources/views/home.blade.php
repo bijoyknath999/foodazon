@@ -46,7 +46,7 @@
     <div class="ms-content-wrapper">
         <div class="ms-card-img">
             <img src="{{asset('images')}}/foodazon-logo.png" alt="people">
-                  </div>            
+        </div>            
         <button type="button" class="btn btn-outline-primary btn-lg">Admin</button>
         <button type="button" class="btn btn-outline-success btn-lg">User</button>
     </div>
