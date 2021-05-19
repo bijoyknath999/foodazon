@@ -479,8 +479,8 @@ class MainController extends Controller
             function loadrecentorder()
             {
                 $matchThese = ['orders_status' => 0, 'orders_type' => 1];
-                $orders = Orders::where($matchThese)->get()->paginate(2);;
-                return ['orders'=>$orders];
+                $orders = Orders::where($matchThese)->get();
+                return view(['orders'=>$orders]);
             }
 
 
