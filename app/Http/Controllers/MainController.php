@@ -135,7 +135,7 @@ class MainController extends Controller
 
 
     function dashboard(){
-        $totalNewUsers = Users::where('verified',0);
+        $totalNewUsers = Users::where('verified','=', 0);
 
         $test = $totalNewUsers->sum('id');
         $totalUsers = Users::where('verified',1)->sum('id');
