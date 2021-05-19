@@ -144,7 +144,7 @@ class MainController extends Controller
                 "totalneworders" => $totalNewOrders, 
                 "totalorders" => $totalOrders];
 
-        return view('admin.dashboard', $count);            
+        return view('admin.dashboard', ['count',$count]);            
     }
 
     function addfood(){
