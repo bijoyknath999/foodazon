@@ -135,7 +135,9 @@ class MainController extends Controller
 
 
     function dashboard(){
-        $totalNewUsers = Users::sum('id')->where('verified',0);
+        $totalNewUsers = Users::where('verified',0);
+
+        $test->$totalNewUsers->sum('id');
         $totalUsers = Users::where('verified',1)->sum('id');
         $totalNewOrders = Orders::where('orders_status',0)->sum('id');
         $totalOrders = Orders::where('orders_status',1)->sum('id');
@@ -144,7 +146,7 @@ class MainController extends Controller
                 "totalneworders" => $totalNewOrders, 
                 "totalorders" => $totalOrders];
 
-        return view('admin.dashboard', ['count'=>$count]);            
+        return $test;            
     }
 
     function addfood(){
