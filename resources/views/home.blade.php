@@ -48,8 +48,8 @@
             <img src="{{asset('images')}}/foodazon-logo.png" alt="people">
         </div>
         <br>            
-        <button type="button" class="btn btn-outline-primary btn-lg">Admin</button>
-        <button type="button" class="btn btn-outline-success btn-lg">User</button>
+        <button onclick="document.location='/admin/login'" type="button" class="btn btn-outline-primary btn-lg">Admin</button>
+        <button onclick="document.location='/user/login'" type="button" class="btn btn-outline-success btn-lg">User</button>
     </div>
   </main>
   <!-- SCRIPTS -->

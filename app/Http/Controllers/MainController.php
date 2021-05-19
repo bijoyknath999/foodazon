@@ -433,11 +433,18 @@ class MainController extends Controller
                 $currentBalance = $user->balance;
                 if($currentBalance>=$request->balance)
                 {
-                    $user->balance = $currentBalance-$request->balance;
-                    $save = $user->save();
-                    $matchThese = ['orders_username' => $data['LoggedUserInfo']->username, 'orders_type' => 0];
-                    $orders = Orders::where($matchThese)->update(array('orders_location' => $request->orders_location, 'orders_id' => $uuid,'orders_type' => 1));
-                    return redirect('/user/myorders');
+                    if($request->balance!=0)
+                    {
+                        $user->balance = $currentBalance-$request->balance;
+                        $save = $user->save();
+                        $matchThese = ['orders_username' => $data['LoggedUserInfo']->username, 'orders_type' => 0];
+                        $orders = Orders::where($matchThese)->update(array('orders_location' => $request->orders_location, 'orders_id' => $uuid,'orders_type' => 1));
+                        return redirect('/user/myorders');
+                    }
+                    else
+                    {
+                        return back()->with('fail',' Add Food First');
+                    }
                 }
                 else
                 {
