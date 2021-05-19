@@ -16,7 +16,7 @@ class UserAuthCheck
      */
     public function handle(Request $request, Closure $next)
     {
-        if(!session()->has('LoggedUser') && ($request->path() !='user/login' && $request->path() !='user/register' ($request->path() != '/') )){
+        if(!session()->has('LoggedUser') && ($request->path() !='user/login' && $request->path() !='user/register' && ($request->path() != '/') )){
             return redirect('user/login')->with('fail','You must be logged in');
         }
 
