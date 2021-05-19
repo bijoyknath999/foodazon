@@ -74,80 +74,36 @@
             </div>
             <div class="ms-panel-body">
               <div class="table-responsive">
-                <table class="table table-hover thead-primary">
+
+                <table class="table w-100 thead-primary">
                   <thead>
                     <tr>
-                      <th scope="col">Order ID</th>
-                      <th scope="col">Order Name</th>
-                      <th scope="col">Customer Name</th>
-                      <th scope="col">Location</th>
-                      <th scope="col">Order Status</th>
-                      <th scope="col">Delivered Time</th>
-                      <th scope="col">Price</th>
+                        <th scope="col">Orders Name</th>
+                        <th scope="col">Orders Quantity</th>
+                        <th scope="col">Orders Price</th>
+                        <th scope="col">Customer Username</th>
+                        <th scope="col">Orders Food ID</th>
+                        <th scope="col">Orders ID</th>
+                        <th scope="col">Orders Location</th>
+                        <th scope="col">Orders Status</th>
                     </tr>
-                  </thead>
-                  <tbody>
+                </thead>
+                <tbody>
+                  @foreach ($orders as $item)
                     <tr>
-                      <th scope="row">1</th>
-                      <td>French Fries</td>
-                      <td>Jhon Leo</td>
-                      <td>New Town</td>
-                      <td><span class="badge badge-primary">Pending</span>
-                      </td>
-                      <td>10:05</td>
-                      <td>$10</td>
+                        <td><img  src='{{asset('images')}}/food.png' style='width:50px; height:30px;'> {{$item["orders_name"]}}</td>
+                        <td>{{$item["orders_quantity"]}}</td>
+                        <td>{{$item["orders_price"]}}</td>
+                        <td>{{$item["orders_username"]}}</td>
+                        <td>{{$item["orders_food_id"]}}</td>
+                        <td>{{$item["orders_id"]}}</td>
+                        <td>{{$item["orders_location"]}}</td>
+                        @if($item->orders_status =='0')
+                        <td><span class="badge badge-primary">Pending</span></td>
+                        @endif
                     </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Mango Pie</td>
-                      <td>Kristien</td>
-                      <td>Old Town</td>
-                      <td><span class="badge badge-dark">Cancelled</span>
-                      </td>
-                      <td>14:05</td>
-                      <td>$9</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>FrieD Egg Sandwich</td>
-                      <td>Jack Suit</td>
-                      <td>Oxford Street</td>
-                      <td><span class="badge badge-success">Delivered</span>
-                      </td>
-                      <td>12:05</td>
-                      <td>$19</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Lemon Yogurt Parfait</td>
-                      <td>Alesdro Guitto</td>
-                      <td>Church hill</td>
-                      <td><span class="badge badge-success">Delivered</span>
-                      </td>
-                      <td>12:05</td>
-                      <td>$18</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>Spicy Grill Sandwich</td>
-                      <td>Jacob Sahwny</td>
-                      <td>palace Road</td>
-                      <td><span class="badge badge-success">Delivered</span>
-                      </td>
-                      <td>12:05</td>
-                      <td>$21</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">6</th>
-                      <td>Chicken Sandwich</td>
-                      <td>Peter Gill</td>
-                      <td>Street 21</td>
-                      <td><span class="badge badge-primary">Pending</span>
-                      </td>
-                      <td>12:05</td>
-                      <td>$15</td>
-                    </tr>
-                  </tbody>
+                  @endforeach
+                </tbody>
                 </table>
               </div>
             </div>
