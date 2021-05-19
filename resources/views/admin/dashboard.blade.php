@@ -90,8 +90,7 @@
                 </thead>
                 <tbody>
                   <form class="form-inline mr-auto mb-4" method="GET" action="{{route('admin.recentorders')}}" ">
-                    @csrf
-                  @foreach ($orders as $item)
+                  @foreach ($data as $item)
                     <tr>
                         <td><img  src='{{asset('images')}}/food.png' style='width:50px; height:30px;'> {{$item["orders_name"]}}</td>
                         <td>{{$item["orders_quantity"]}}</td>
