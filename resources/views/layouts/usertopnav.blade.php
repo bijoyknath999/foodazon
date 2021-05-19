@@ -32,7 +32,7 @@
 
       <!-- Dashboard -->
         <li class="menu-item">
-          <a href="/admin/dashboard"> <span><i class="material-icons fs-16">dashboard</i>Dashboard </span>
+          <a href="/user/dashboard"> <span><i class="material-icons fs-16">dashboard</i>Dashboard </span>
           </a>
         </li>
       <!-- /Dashboard -->
@@ -93,12 +93,10 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-right user-dropdown" aria-labelledby="userDropdown">
             <li class="dropdown-menu-header">
-              <h6 class="dropdown-header ms-inline m-0"><span class="text-disabled">Welcome, Admin</span></h6>
+              <h6 class="dropdown-header ms-inline m-0"><span class="text-disabled">Welcome, Foodie</span></h6>
             </li>
             <li class="dropdown-divider"></li>
             <li class="ms-dropdown-list">
-              <a class="media fs-14 p-2" href="pages/prebuilt-pages/user-profile.html"> <span><i class="flaticon-user mr-2"></i> Profile</span>
-              </a>
               <a class="media fs-14 p-2" href="{{ route('user.logout') }}"> <span><i class="flaticon-shut-down mr-2"></i> Logout</span>
               </a>
               </a>
