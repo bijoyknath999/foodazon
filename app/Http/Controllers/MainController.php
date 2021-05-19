@@ -144,7 +144,7 @@ class MainController extends Controller
                 "totalneworders" => $totalNewOrders, 
                 "totalorders" => $totalOrders];
 
-        return $count;
+        return $count->totalnewusers;
         // return view('admin.dashboard', ['count'=>$count]);            
     }
 
