@@ -9,54 +9,59 @@
         <div class="col-md-12">
           <h1 class="db-header-title">Welcome, Admin</h1>
         </div>
-        <div class="col-xl-3 col-lg-6 col-md-6">
-          <div class="ms-card ms-widget has-graph-full-width ms-infographics-widget">
-            <span class="ms-chart-label bg-black"><i class="material-icons">arrow_upward</i> 3.2%</span>
+        
+
+         <!-- Icon cards Widget -->
+
+         <div class="col-xl-3 col-md-6">
+          <div class="ms-card card-gradient-success ms-widget ms-infographics-widget">
             <div class="ms-card-body media">
               <div class="media-body">
-                <span class="black-text"><strong>Sells Graph</strong></span>
-                <h2>$8,451</h2>
+                <h6>Total Subscriptions</h6>
+                <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> 4567</p>
+                <p class="fs-12">48% From Last 24 Hours</p>
               </div>
             </div>
-            <canvas id="line-chart"></canvas>
+            <i class="flaticon-statistics"></i>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-6 col-md-6">
-          <div class="ms-card ms-widget has-graph-full-width ms-infographics-widget">
-            <span class="ms-chart-label bg-red"><i class="material-icons">arrow_downward</i> 4.5%</span>
+        <div class="col-xl-3 col-md-6">
+          <div class="ms-card card-gradient-secondary ms-widget ms-infographics-widget">
             <div class="ms-card-body media">
               <div class="media-body">
-                <span class="black-text"><strong>Total Visitors</strong></span>
-                <h2>3,973</h2>
+                <h6>Budgets</h6>
+                <p class="ms-card-change"> $80,950</p>
+                <p class="fs-12">2% Decreased from last budget</p>
               </div>
             </div>
-            <canvas id="line-chart-2"></canvas>
+            <i class="flaticon-stats"></i>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-6 col-md-6">
-          <div class="ms-card ms-widget has-graph-full-width ms-infographics-widget">
-            <span class="ms-chart-label bg-black"><i class="material-icons">arrow_upward</i> 12.5%</span>
+        <div class="col-xl-3 col-md-6">
+      <div class="ms-card card-gradient-success ms-widget ms-infographics-widget">
             <div class="ms-card-body media">
               <div class="media-body">
-                <span class="black-text"><strong>New Users</strong></span>
-                <h2>7,333</h2>
+                <h6>Total Users</h6>
+                <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> 4567</p>
+                <p class="fs-12">48% From Last 24 Hours</p>
               </div>
             </div>
-            <canvas id="line-chart-3"></canvas>
+            <i class="flaticon-user"></i>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-6 col-md-6">
-          <div class="ms-card ms-widget has-graph-full-width ms-infographics-widget">
-            <span class="ms-chart-label bg-red"><i class="material-icons">arrow_upward</i> 9.5%</span>
+        <div class="col-xl-3 col-md-6">
+        <div class="ms-card card-gradient-secondary ms-widget ms-infographics-widget">
             <div class="ms-card-body media">
               <div class="media-body">
-                <span class="black-text"><strong>Total Orders</strong></span>
-                <h2>48,973</h2>
+                <h6>Conversions</h6>
+                <p class="ms-card-change"> $80,950</p>
+                <p class="fs-12">2% Decreased from last budget</p>
               </div>
             </div>
-            <canvas id="line-chart-4"></canvas>
+            <i class="flaticon-reuse"></i>
           </div>
         </div>
+
         
       
         <!-- Recent Placed Orders< -->
