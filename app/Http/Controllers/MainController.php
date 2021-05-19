@@ -138,9 +138,11 @@ class MainController extends Controller
         $data = ['LoggedAdminInfo'=>Admin::where('id','=', session('LoggedAdmin'))->first()];
 
         $totalNewUsers = Users::where('verified',0)->sum('id');
+        $totalUsers = Users::where('verified',1)->sum('id');
+
         $count = ["title" => "hello", "description" => "test test test"];
 
-        return $totalNewUsers;
+        return $totalUsers;
     }
 
     function addfood(){
