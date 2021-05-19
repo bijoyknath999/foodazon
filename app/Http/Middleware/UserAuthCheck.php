@@ -20,7 +20,7 @@ class UserAuthCheck
             return redirect('user/login')->with('fail','You must be logged in');
         }
 
-        if(session()->has('LoggedUser') && ($request->path() == 'user/login' || $request->path() == 'user/register' || ($request->path() == 'home') ) ){
+        if(session()->has('LoggedUser') && ($request->path() == 'user/login' || $request->path() == 'user/register' || ($request->path() == '/') ) ){
             return back();
         }
         return $next($request)->header('Cache-Control','no-cache, no-store, max-age=0, must-revalidate')
