@@ -46,7 +46,6 @@ Route::group(['middleware'=>['AuthCheck']], function(){
     Route::get('/admin/orders',[MainController::class, 'loadallorders']);
     Route::get('/admin/ordercompleted/{id}',[MainController::class, 'completedorder']);
     Route::get('/admin/orderremove/{id}',[MainController::class, 'removedorder']);
-    Route::get('/admin/recentorders',[MainController::class, 'loadrecentorder'])->name('admin.recentorders');
 });
 
 Route::group(['middleware'=>['UserAuthCheck']], function(){

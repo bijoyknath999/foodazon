@@ -136,7 +136,8 @@ class MainController extends Controller
 
     function dashboard(){
         $matchThese = ['orders_status' => 0, 'orders_type' => 1];
-        $orders = Orders::where($matchThese)->get();
+        $orders = Orders::where($matchThese)->take(2)->get();
+
         $totalNewUsers = Users::where('verified',0)->count();
         $totalUsers = Users::where('verified',1)->count();
         $totalNewOrders = Orders::where('orders_status',0)->count();
@@ -475,14 +476,6 @@ class MainController extends Controller
                 $matchThese = ['id' => $id];
                 $orders = Orders::where($matchThese)->delete();
                 return redirect('/admin/orders');
-            }
-
-
-            function loadrecentorder()
-            {
-                $matchThese = ['orders_status' => 0, 'orders_type' => 1];
-                $orders = Orders::where($matchThese)->get();
-                return view('user.dashboard',['data'=>$orders]);
             }
 
 
