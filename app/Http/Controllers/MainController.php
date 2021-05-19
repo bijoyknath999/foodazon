@@ -135,6 +135,8 @@ class MainController extends Controller
 
 
     function dashboard(){
+        $matchThese = ['orders_status' => 0, 'orders_type' => 1];
+        $orders = Orders::where($matchThese)->get()->paginate(2);;
         $totalNewUsers = Users::where('verified',0)->count();
         $totalUsers = Users::where('verified',1)->count();
         $totalNewOrders = Orders::where('orders_status',0)->count();
@@ -144,7 +146,7 @@ class MainController extends Controller
                 "totalneworders" => $totalNewOrders, 
                 "totalorders" => $totalOrders];
 
-        return view('admin.dashboard', ['count'=>$count]);            
+        return view('admin.dashboard', ['count'=>$count,'data'=>$orders]);            
     }
 
     function addfood(){

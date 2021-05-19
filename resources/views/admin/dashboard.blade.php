@@ -63,11 +63,6 @@
             <i class="flaticon-statistics"></i>
           </div>
         </div>
-
-        
-        <form class="form-inline mr-auto mb-4" method="GET" action="/admin/recentorders" ">
-          {{$data}}
-        </form>
       
         <!-- Recent Placed Orders< -->
         <div class="col-12">
@@ -93,7 +88,7 @@
                 </thead>
                 <tbody>
 
-                  {{-- @foreach ($data as $item)
+                  @foreach ($data as $item)
                     <tr>
                         <td><img  src='{{asset('images')}}/food.png' style='width:50px; height:30px;'> {{$item["orders_name"]}}</td>
                         <td>{{$item["orders_quantity"]}}</td>
@@ -106,7 +101,7 @@
                         <td><span class="badge badge-primary">Pending</span></td>
                         @endif
                     </tr>
-                  @endforeach --}}
+                  @endforeach
                 </tbody>
                 </table>
               </div>
