@@ -58,7 +58,7 @@
                 <td><img  src='{{asset('images')}}/user.png' style='width:50px; height:30px;'> {{$item["firstname"]}} {{$item["lastname"]}}</td>
                 <td>{{$item["username"]}}</td>
                 <td>{{$item["email"]}}</td>
-                <form method='POST' action="/admin/verified/ ">
+                <form method='POST' action="/admin/verified">
                   @csrf
                 <input type="hidden" name="id" value="{{$item["id"]}}">
                 <td><button class="btn btn-success btn-rounded btn-sm my-0 waves-effect waves-light" type="submit">Verify</button></td>
