@@ -17,48 +17,50 @@
           <div class="ms-card card-gradient-success ms-widget ms-infographics-widget">
             <div class="ms-card-body media">
               <div class="media-body">
-                <h6>Total Subscriptions</h6>
-                <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> 4567</p>
-                <p class="fs-12">48% From Last 24 Hours</p>
-              </div>
-            </div>
-            <i class="flaticon-statistics"></i>
-          </div>
-        </div>
-        <div class="col-xl-3 col-md-6">
-          <div class="ms-card card-gradient-secondary ms-widget ms-infographics-widget">
-            <div class="ms-card-body media">
-              <div class="media-body">
-                <h6>Budgets</h6>
-                <p class="ms-card-change"> $80,950</p>
-                <p class="fs-12">2% Decreased from last budget</p>
-              </div>
-            </div>
-            <i class="flaticon-stats"></i>
-          </div>
-        </div>
-        <div class="col-xl-3 col-md-6">
-      <div class="ms-card card-gradient-success ms-widget ms-infographics-widget">
-            <div class="ms-card-body media">
-              <div class="media-body">
-                <h6>Total Users</h6>
-                <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> 4567</p>
-                <p class="fs-12">48% From Last 24 Hours</p>
+                <h6>Total New Customers</h6>
+                <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> 150</p>
               </div>
             </div>
             <i class="flaticon-user"></i>
           </div>
         </div>
+
+      
         <div class="col-xl-3 col-md-6">
-        <div class="ms-card card-gradient-secondary ms-widget ms-infographics-widget">
+          <div class="ms-card card-gradient-secondary ms-widget ms-infographics-widget">
             <div class="ms-card-body media">
               <div class="media-body">
-                <h6>Conversions</h6>
-                <p class="ms-card-change"> $80,950</p>
-                <p class="fs-12">2% Decreased from last budget</p>
+                <h6>Total New Orders</h6>
+                <p class="ms-card-change"> 1000</p>
               </div>
             </div>
-            <i class="flaticon-reuse"></i>
+            <i class="flaticon-statistics"></i>
+          </div>
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+          <div class="ms-card card-gradient-success ms-widget ms-infographics-widget">
+            <div class="ms-card-body media">
+              <div class="media-body">
+                <h6>Total Customers</h6>
+                <p class="ms-card-change"> <i class="material-icons">arrow_upward</i> 100</p>
+              </div>
+            </div>
+            <i class="flaticon-user"></i>
+          </div>
+        </div>
+
+
+        <div class="col-xl-3 col-md-6">
+          <div class="ms-card card-gradient-secondary ms-widget ms-infographics-widget">
+            <div class="ms-card-body media">
+              <div class="media-body">
+                <h6>Total Completed Orders</h6>
+                <p class="ms-card-change"> 100</p>
+              </div>
+            </div>
+            <i class="flaticon-statistics"></i>
           </div>
         </div>
 
