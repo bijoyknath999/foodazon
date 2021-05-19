@@ -44,9 +44,9 @@
   <main class="body-content ms-coming-soon">
     <!-- Body Content Wrapper -->
     <div class="ms-content-wrapper">
-        <div class="ms-chat-status ms-status-offline ms-chat-img mr-2 align-self-center">
-            <img src="{{asset('images')}}/foodazon-logo.png" class="ms-img-round" alt="people">
-          </div>
+        <div class="ms-card-img">
+            <img src="{{asset('images')}}/foodazon-logo.png" alt="people">
+                  </div>            
         <button type="button" class="btn btn-outline-primary btn-lg">Admin</button>
         <button type="button" class="btn btn-outline-success btn-lg">User</button>
     </div>
