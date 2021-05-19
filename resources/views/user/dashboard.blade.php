@@ -11,9 +11,9 @@
 <div class="col-xl-4 col-md-12">
     <div class="ms-card ms-widget ms-profile-widget ms-card-fh">
       <div class="ms-card-img">
-        <img src="../assets/img/costic/banner-1000x370.jpg" alt="card_img">
+        <img src="{{asset('images')}}/banner-1000x370.jpg" alt="card_img">
       </div>
-      <img src="../assets/img/costic/customer-10.jpg" class="ms-img-large ms-img-round ms-user-img" alt="people">
+      <img src="{{asset('images')}}/user.png" class="ms-img-large ms-img-round ms-user-img" alt="people">
       <div class="ms-card-body">
         <h2>Anny Farisha</h2>
         <span>Quality Control Manager</span>
