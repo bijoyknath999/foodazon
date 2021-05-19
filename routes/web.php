@@ -14,11 +14,6 @@ use App\Http\Controllers\MainController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-
 Route::post('/admin/check',[MainController::class, 'check'])->name('admin.check');
 Route::get('/admin/logout',[MainController::class, 'logout'])->name('admin.logout');
 
@@ -46,6 +41,9 @@ Route::group(['middleware'=>['AuthCheck']], function(){
     Route::get('/admin/orders',[MainController::class, 'loadallorders']);
     Route::get('/admin/ordercompleted/{id}',[MainController::class, 'completedorder']);
     Route::get('/admin/orderremove/{id}',[MainController::class, 'removedorder']);
+    Route::get('/', function () {
+        return view('home');
+    });
 });
 
 Route::group(['middleware'=>['UserAuthCheck']], function(){
@@ -60,6 +58,7 @@ Route::group(['middleware'=>['UserAuthCheck']], function(){
     Route::get('/user/cartdelete/{id}',[MainController::class, 'removefromcart']);
     Route::post('/user/submitorder',[MainController::class, 'submitorder']);
     Route::get('/user/myorders',[MainController::class, 'loadmyorderslist']);
-
-
+    Route::get('/', function () {
+        return view('home');
+    });
 });
