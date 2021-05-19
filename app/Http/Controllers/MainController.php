@@ -480,7 +480,7 @@ class MainController extends Controller
             {
                 $matchThese = ['orders_status' => 0, 'orders_type' => 1];
                 $orders = Orders::where($matchThese)->get();
-                return view(['orders'=>$orders]);
+                return $orders;
             }
 
 
