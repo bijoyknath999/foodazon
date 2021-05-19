@@ -89,7 +89,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                  <form class="form-inline mr-auto mb-4" method="GET" action="{{route('admin.recentorders')}}" ">
+                  <form class="form-inline mr-auto mb-4" method="GET" action="/admin/recentorders" ">
                     {{$data}}
                   </form>
 
