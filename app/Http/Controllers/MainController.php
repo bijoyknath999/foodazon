@@ -148,7 +148,7 @@ class MainController extends Controller
 
     function userdashboard(){
     $data = ['LoggedUserInfo'=>Users::where('id','=', session('LoggedUser'))->first()];
-    return $data['LoggedUserInfo'];
+    return view('user.dashboard', ['data'=>$data['LoggedUserInfo']]);
     }
 
 

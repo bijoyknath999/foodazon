@@ -15,7 +15,7 @@
       </div>
       <img src="{{asset('images')}}/user.png" class="ms-img-large ms-img-round ms-user-img" alt="people">
       <div class="ms-card-body">
-        <h2>Anny Farisha</h2>
+      <h2>{{$data->firstname}} {{$data->lastname}}</h2>
         <span>Quality Control Manager</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in arcu turpis. Nunc</p>
         <button type="button" class="btn btn-gradient-primary" name="button"><i class="material-icons">person_add</i> Follow</button>
