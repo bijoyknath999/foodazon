@@ -93,7 +93,7 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-right user-dropdown" aria-labelledby="userDropdown">
             <li class="dropdown-menu-header">
-              <h6 class="dropdown-header ms-inline m-0"><span class="text-disabled">Welcome, Foodie</span></h6>
+              <h6 class="dropdown-header ms-inline m-0"><span class="text-disabled">Welcome, {{$data->username}}</span></h6>
             </li>
             <li class="dropdown-divider"></li>
             <li class="ms-dropdown-list">
