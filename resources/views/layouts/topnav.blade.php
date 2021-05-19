@@ -24,7 +24,7 @@
     <!-- Logo -->
     <div class="logo-sn ms-d-block-lg">
       <a class="pl-0 ml-0 text-center" href="index.html">
-        <img src="{{asset('images')}}/foodazon-logo.png" alt="logo">
+        <img src="{{asset('images')}}/logo-big.png" alt="logo">
       </a>
     </div>
     <!-- Navigation -->
