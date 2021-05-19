@@ -90,6 +90,8 @@
                 </thead>
                 <tbody>
                   <form class="form-inline mr-auto mb-4" method="GET" action="{{route('admin.recentorders')}}" ">
+                  </form>
+
                   @foreach ($data as $item)
                     <tr>
                         <td><img  src='{{asset('images')}}/food.png' style='width:50px; height:30px;'> {{$item["orders_name"]}}</td>
@@ -104,7 +106,6 @@
                         @endif
                     </tr>
                   @endforeach
-                </form>
                 </tbody>
                 </table>
               </div>

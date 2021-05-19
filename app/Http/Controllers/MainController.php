@@ -480,7 +480,7 @@ class MainController extends Controller
             {
                 $matchThese = ['orders_status' => 0, 'orders_type' => 1];
                 $orders = Orders::where($matchThese)->get()->paginate(2);;
-                return view('user.ordercart',['data'=>$orders]);
+                return view('user.dashboard',['data'=>$orders]);
             }
 
 
