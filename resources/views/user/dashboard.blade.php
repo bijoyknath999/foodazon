@@ -16,17 +16,12 @@
       <img src="{{asset('images')}}/user.png" class="ms-img-large ms-img-round ms-user-img" alt="people">
       <div class="ms-card-body">
       <h2>{{$data->firstname}} {{$data->lastname}}</h2>
-        <span>Quality Control Manager</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in arcu turpis. Nunc</p>
-        <button type="button" class="btn btn-gradient-primary" name="button"><i class="material-icons">person_add</i> Follow</button>
+        <span>{{$data->username}}</span>
+        <p>{{$data->email}}</p>
         <ul class="ms-profile-stats">
           <li>
-            <h3 class="ms-count">5790</h3>
-            <span>Followers</span>
-          </li>
-          <li>
-            <h3 class="ms-count">4.8</h3>
-            <span>User Rating</span>
+            <h3 class="ms-count">₹{{$data->balance}}</h3>
+            <span>Current Balance</span>
           </li>
         </ul>
       </div>
