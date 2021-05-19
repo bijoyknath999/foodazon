@@ -108,15 +108,7 @@
                   <div class="text-danger" style="margin-bottom: 10px">@error('password'){{ $message }} @enderror</div>
                 </div>
               </div>
-              <div class="form-group">
-                <div class="form-check pl-0">
-                  <label class="ms-checkbox-wrap">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
-                    <i class="ms-checkbox-check"></i>
-                  </label>
-                  <span> Agree to terms and conditions </span>
-                </div>
-              </div>
+              
               <button class="btn btn-primary mt-4 d-block w-100" type="submit">Create Account</button>
               
               <p class="mb-0 mt-3 text-center">Already have an account? <a class="btn-link" href="{{route('user.login')}}">Login</a> </p>

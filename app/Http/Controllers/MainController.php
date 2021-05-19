@@ -34,7 +34,7 @@ class MainController extends Controller
             'firstname'=>'required',
             'lastname'=>'required',
             'username' => ['required', 'string', 'max:255', 'unique:users', 'regex:/^\S*$/u'],
-            'email'=>'required|email|unique:admins',
+            'email'=>'required|email|unique:users',
             'password'=>'required|min:6|max:12',
             'enroll_no'=>'required'
         ]);
