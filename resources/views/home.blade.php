@@ -44,8 +44,8 @@
   <main class="body-content ms-coming-soon">
     <!-- Body Content Wrapper -->
     <div class="ms-content-wrapper">
-        <button type="button" class="btn btn-outline-primary">Primary</button>
-        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-primary btn-lg">Admin</button>
+        <button type="button" class="btn btn-outline-success btn-lg">User</button>
     </div>
   </main>
   <!-- SCRIPTS -->
