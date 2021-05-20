@@ -45,11 +45,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'db4free.net'),
+            'host' => env('DB_HOST', 'sql6.freemysqlhosting.net'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'foodazon_canteen'),
-            'username' => env('DB_USERNAME', 'foodazon'),
-            'password' => env('DB_PASSWORD', 'foodazon'),
+            'database' => env('DB_DATABASE', 'sql6413561'),
+            'username' => env('DB_USERNAME', 'sql6413561'),
+            'password' => env('DB_PASSWORD', 'QS719JNQvX'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
